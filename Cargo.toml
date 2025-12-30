@@ -1,0 +1,11 @@
+[package]
+name = "ndi-screen-share"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ndi = { git = "https://github.com/maxjoehnk/ndi-rs", branch = "feature/ndi-5" }
+color-eyre = "0.6"
+scap = "0.1.0-beta.1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
