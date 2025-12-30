@@ -13,7 +13,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 scap = "0.1.0-beta.1"
 
 [target.'cfg(target_os = "windows")'.dependencies]
-scap = "0.1.0-beta.1"
+scap = "0.0.8"
 
 [target.'cfg(target_os = "linux")'.dependencies]
 scap = "0.0.8"

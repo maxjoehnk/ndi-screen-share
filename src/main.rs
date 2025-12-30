@@ -3,7 +3,7 @@ use tracing_subscriber::{fmt, EnvFilter};
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
-#[cfg(target_os = "linux")]
+#[cfg(any(target_os = "linux", target_os = "windows"))]
 fn main() -> color_eyre::Result<()> {
     use scap::capturer::Capturer;
 
@@ -60,7 +60,7 @@ fn main() -> color_eyre::Result<()> {
     }
 }
 
-#[cfg(any(target_os = "macos", target_os = "windows"))]
+#[cfg(any(target_os = "macos"))]
 fn main() -> color_eyre::Result<()> {
     use scap::capturer::Capturer;
 
